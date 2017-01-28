@@ -22,14 +22,14 @@
   "Show inline contextual docs."
   :group 'docs)
 
-(defcustom inline-docs-position 'up
+(defcustom inline-docs-position 'above
   "Specify inline-docs display position, up or down.
 
 Set `inline-docs-position' to `up' to fix issue that `inline-docs' does not show on single line which don't has next line."
   :type '(choice
           :tag "Specify inline-docs display position."
-          (const :tag "up" up)
-          (const :tag "down" down))
+          (const :tag "up" above)
+          (const :tag "down" below))
   :group 'inline-docs)
 
 (defcustom inline-docs-border-symbol ?―
